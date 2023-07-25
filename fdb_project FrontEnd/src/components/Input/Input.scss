@@ -1,0 +1,26 @@
+@mixin mobile($width){
+  @media only screen and (max-width: $width) {
+    @content
+  }
+}
+
+
+.form-input {
+  background-color: rgb(206, 206, 174);
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  border: none;
+
+}
+
+.form-inputLabel{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.input-main{
+  display: flex;
+  flex-direction: column;
+  margin:15px 0px;
+}

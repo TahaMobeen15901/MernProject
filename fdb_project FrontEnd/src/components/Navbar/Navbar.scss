@@ -1,0 +1,43 @@
+$Lorange:rgb(255, 102, 0);
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.inner-nav{
+  position: relative;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    & *{
+      margin: 5px;
+    }
+    .title{
+      color: $Lorange;
+      font-size: 2em;
+    }
+    .subtitle{
+      display:flex;
+      flex-direction: row;
+      align-items: flex-end;
+      padding-bottom: 5px;
+    }
+  }
+  .links{
+    display:flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

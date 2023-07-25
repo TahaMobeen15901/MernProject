@@ -1,0 +1,12 @@
+.main {
+  background-image: linear-gradient(to top right, rgb(83, 83, 83), rgb(50, 50, 139));
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+}
+.add-warehouse-error{
+  color: red;
+  }

@@ -1,0 +1,55 @@
+.warehouse-form-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.warehouse-form{
+position: relative;
+padding: 20px;
+background-color: #fff;
+border-radius: 30px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.add-warehouse-buttons{
+margin: 15px 5px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+& * {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 0px 10px;
+}
+input{
+  color:white;
+  background-color: rgb(2, 145, 2);
+}
+input:hover{
+  background-color: rgba(2, 82, 2,0.5);
+}
+& *:active{
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+button{
+  background-color: rgba(141, 141, 141, 0.8);
+}
+button:hover{
+  background-color: rgba(141, 141, 141, 0.5);
+}
+}
+.add-warehouse-error{
+color: red;
+}

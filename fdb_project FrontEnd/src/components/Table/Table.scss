@@ -1,0 +1,71 @@
+$Lorange: rgb(255, 102, 0);
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead {
+  width: 80%;
+  background-color: $Lorange;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 0px;
+  tr {
+    display: flex;
+    justify-content: space-evenly;
+    th {
+      text-align: center;
+      margin: 0px 10px;
+    }
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      padding: 2px 20px;
+      border-radius: 30px;
+    }
+    button:hover,
+    button:focus {
+      filter: brightness(1.2);
+    }
+    button:active {
+      box-shadow: 0 3px #666;
+      transform: translateY(4px);
+    }
+  }
+  tr:hover,
+  tr:focus {
+    filter: var(--bright);
+  }
+}
+
+tbody {
+  margin-top: 50px;
+  width: 80%;
+  height: 100%;
+  tr {
+    display: flex;
+    justify-content: space-evenly;
+    td {
+      width: 25%;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      color: $Lorange;
+      background-color: white;
+      border-radius: 50px;
+    }
+  }
+  tr:hover,
+  tr:focus {
+    filter: var(--bright);
+  }
+}

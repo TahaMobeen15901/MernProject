@@ -1,0 +1,97 @@
+@mixin mobile($width){
+  @media only screen and (max-width: $width) {
+    @content
+  }
+}
+
+$Lorange:rgb(255, 102, 0);
+
+.Login-Page{
+  background-image: linear-gradient(to top right, rgb(83, 83, 83),rgb(50, 50, 139));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.Login-Page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.Heading{
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Logo{
+  font-size: 3em;
+}
+.Logo-NEXUS{
+  color:$Lorange;
+}
+.Logo-GOODS{
+  color:white;
+}
+.Heading-Subtitle{
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 120px;
+}
+.Login-Form{
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 90px;
+}
+.Associates{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: blue;
+}
+
+.FSB{
+  background-color: rgb(2, 145, 2);
+  border-radius: 30px;
+  padding: 6px 20px;
+  color: white;
+  border: none;
+}
+
+.FSB:hover{
+  background-color: rgb(2, 82, 2);
+}
+.FSB:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+.Error{
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.Sign-In-Link:hover{
+  color: lightblue;
+
+}
+.Sign-In-Link{
+  text-decoration: underline;
+}
